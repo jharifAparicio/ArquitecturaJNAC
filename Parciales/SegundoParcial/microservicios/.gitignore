@@ -1,0 +1,9 @@
+serviceUsers/node_modules
+.vscode
+serviceUsers/npm-debug.log
+.serverless
+serviceUsers/variables.env
+
+/**.log.*
+
+**/node_modules
