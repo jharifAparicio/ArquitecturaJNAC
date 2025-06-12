@@ -1,10 +1,11 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'reservasdehotel',
+    host: "host.docker.internal",
+    user: "root",
+    password: "",
+    database: "reservasdehotel",
+    port: 3306,
 });
 
 connection.connect(err => {

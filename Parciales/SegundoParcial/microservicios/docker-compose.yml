@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+    login:
+        image: login:1.0
+        ports:
+            - "3000:3000"
+        networks:
+            - appnet
+
+    Reserva:
+        image: reserva:1.0
+        ports:
+            - "3010:3010"
+        networks:
+            - appnet
+
+    Habitacion:
+        image: habitacion:1.0
+        ports:
+            - "3005:3005"
+        networks:
+            - appnet
+
+networks:
+    appnet:
+        driver: bridge

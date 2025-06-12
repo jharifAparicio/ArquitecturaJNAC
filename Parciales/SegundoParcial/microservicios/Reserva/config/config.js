@@ -1,7 +1,5 @@
-require('dotenv').config();
-
 module.exports = {
-    mongoURI: process.env.MONGO_URI,
-    jwtSecret: process.env.JWT_SECRET,
-    port: process.env.PORT || 3010
+    mongoURI: "mongodb://host.docker.internal:27017/reservasdb",
+    jwtSecret: "sup6546ersecreto",
+    port: 3010
 };
